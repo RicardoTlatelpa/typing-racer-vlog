@@ -35,7 +35,7 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
+      {/* <div className={styles.copyright}>Copyright 2022 {config.author}</div> */}
 
       <div className={styles.settings}>
         {hasMounted && (
@@ -52,17 +52,7 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
-        {config.twitter && (
-          <a
-            className={styles.twitter}
-            href={`https://twitter.com/${config.twitter}`}
-            title={`Twitter @${config.twitter}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaTwitter />
-          </a>
-        )}
+        
 
         {config.mastodon && (
           <a
@@ -90,7 +80,7 @@ export const FooterImpl: React.FC = () => {
         {config.github && (
           <a
             className={styles.github}
-            href={`https://github.com/${config.github}`}
+            href={`https://github.com/ricardotlatelpa`}
             title={`GitHub @${config.github}`}
             target='_blank'
             rel='noopener noreferrer'
@@ -102,7 +92,7 @@ export const FooterImpl: React.FC = () => {
         {config.linkedin && (
           <a
             className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
+            href={`https://linkedin.com/in/ricardotla`}
             title={`LinkedIn ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
